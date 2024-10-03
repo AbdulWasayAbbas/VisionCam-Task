@@ -26,7 +26,7 @@ Android Studio and Android device/emulator for testing
 
 > **Setup Instructions**:
 
-## Step 1:Clone the Repository
+## Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/connect-external-webcam-react-native.git
