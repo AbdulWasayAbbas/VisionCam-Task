@@ -1,79 +1,63 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+This is a [**React Native**](https://reactnative.dev) project.
 
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+>**Objective**:
+This project demonstrates how to connect an external USB webcam in a React Native app. The app allows you to:
+Detect and connect to an external webcam.
+Display the webcam’s live video feed within the app.
+Having controls for starting/stopping the feed, switching cameras, and capturing images.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+>**Features**:
+Live Video Feed: Displays a live video stream from a connected external webcam.
+Controls: Start/Stop the video feed.
+Switch between the device’s front camera and the external webcam.
+Capture an image and cache it locally.
+Basic Error Handling: Manage scenarios where the webcam is disconnected.
 
-```bash
-# using npm
-npm start
+>** Requirements**:
+React Native CLI 
+Android (iOS support optional)
+Node.js installed on your machine
+Android Studio and Android device/emulator for testing
 
-# OR using Yarn
-yarn start
-```
+> **Setup Instructions**:
 
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
+## Step 1:Clone the Repository
 
 ```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+git clone https://github.com/your-username/connect-external-webcam-react-native.git
+cd connect-external-webcam-react-native
+```
+Install Dependencies Ensure you have Node.js installed, then run:
+```bash
+npm install
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## Step 2: Run the Application To start the app on Android, use:
+```bash
+npx react-native run-android
+```
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+Make sure your Android device is connected or an emulator is running.
 
-## Step 3: Modifying your App
+Testing Webcam Features
 
-Now that you have successfully run the app, let's modify it.
+Connect your external USB camera.
+Ensure the app detects the webcam and displays the live video feed.
+Test switching between the external webcam and the front camera, starting/stopping the feed, and capturing images.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+Usage
+Start Video Feed: Open the app and longPress the "Camera" button to display the live feed.
+Capture Image: Tap "Camera" button to take a photo and save it locally.
+Switch Camera: Use the "Switch Camera" button to toggle between the front camera and the external webcam.
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+Error Handling
+In case the external webcam is disconnected, an alert will notify the user to reconnect or use the default camera.
 
-## Congratulations! :tada:
+## Congratulations!:
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+You've successfully run this React Native App. :partying_face:
