@@ -18,7 +18,7 @@ Switch between the device’s front camera and the external webcam.
 Capture an image and cache it locally.
 Basic Error Handling: Manage scenarios where the webcam is disconnected.
 
->** Requirements**:
+>**Requirements**:
 React Native CLI 
 Android (iOS support optional)
 Node.js installed on your machine
