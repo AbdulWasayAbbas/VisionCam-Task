@@ -29,7 +29,7 @@ Android Studio and Android device/emulator for testing
 ## Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/connect-external-webcam-react-native.git
+git clone https://github.com/AbdulWasayAbbas/VisionCam-Task.git
 cd connect-external-webcam-react-native
 ```
 Install Dependencies Ensure you have Node.js installed, then run:
